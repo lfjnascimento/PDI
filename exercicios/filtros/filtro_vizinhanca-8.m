@@ -14,11 +14,11 @@ L = unique(img);
 Q = size(L)(1);
 
 # a contruibuicao de valores 0 eh nula
-# filtro vizinhaca-4
+# filtro vizinhaca-8
 w = [
-    [0, 1, 0],
     [1, 1, 1],
-    [0, 1, 0]
+    [1, 1, 1],
+    [1, 1, 1]
 ];
 sum_w = sum(sum(w));
 [M_w, N_w] = size(w);
@@ -44,7 +44,6 @@ endfor
 
 r = 2;
 c = 2;
-
 subplot(r, c, 1);
 imshow(img, []);
 title("Imagem original");
