@@ -10,8 +10,6 @@ img = [
     [8, 9, 0, 10, 11]
 ];
 [M_img, N_img] = size(img);
-L = unique(img);
-Q = size(L)(1);
 
 # a contruibuicao de valores 0 eh nula
 # filtro vizinhaca-4
